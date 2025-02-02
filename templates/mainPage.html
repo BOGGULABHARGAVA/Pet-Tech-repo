@@ -1,0 +1,18 @@
+{% extends 'Header.html' %}
+{% block content %} 
+<div class="maincomponent row">
+    <div class="firstcontainer">First Div</div>
+    <div class="firstcontainer">2nd Div</div>
+</div>
+<div class="secondcontainer">
+</div>
+
+
+<script>
+$(document).ready(function(){
+    register_insight_events();
+    get_insights_data_from_moneycontrol("IBM");
+});
+</script>
+{% endblock %}
+

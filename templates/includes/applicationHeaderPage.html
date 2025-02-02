@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Tech Pioneers</title>
+    <link href="{{url_for('static', filename='css/main.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/open_source/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/open_source/dataTables.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/open_source/jquery-ui.css')}}" rel="stylesheet">
+    <script src="{{url_for('static', filename='js/open_source/jquery-3.7.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/open_source/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/open_source/dataTables.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/open_source/plotly-2.32.0.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/open_source/jquery-ui.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/open_source/jspdf.umd.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/open_source/jspdf.plugin.autotable.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container text-center">
+            <img src="{{ url_for('static', filename='images/petTech_logo.png') }}" alt="Pet Tech Pioneers Logo" class="logo">
+            <h1>Pet Tech Pioneers</h1>
+            <p class="tagline">Diagnosis for Skin Diseases in Cats and Dogs with Medication Suggestions</p>
+        </div>
+    </header>
+
+    <!-- Header Section for Navigation -->
+    <div class="solutionHeaderProp row">
+        <div class="univIconProp">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Pet Tech Icon" class="logo">
+        </div>
+        <div class="univTitle">
+            <h2>Pet Tech Pioneers</h2>
+        </div>
+        <div class="menuAreadProp row">
+            <a href="{{url_for('homePage')}}" class="anchorProp">Home</a>
+            <a href="{{url_for('aboutPage')}}" class="anchorProp">About</a>
+            <a href="{{url_for('verification')}}" class="anchorProp">Verify Disease</a>
+            {% if not user_login %}
+                <a href="{{url_for('loginPage')}}" class="anchorProp">Login</a>
+            {% else %}
+                <a href="{{url_for('logout')}}" class="anchorProp">Logout</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Pet Tech Pioneers. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
