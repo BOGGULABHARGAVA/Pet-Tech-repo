@@ -256,3 +256,215 @@ button:hover {
 .submit-button:hover {
     background-color: #4cae4c;
 }
+
+
+/* Global Styling */
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+}
+
+/* Header Styling */
+.card-header {
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    font-size: 18px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Input and Textarea Styling */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder Styling */
+::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+    }
+}
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6fb;
+    color: #333;
+}
+
+/* Home Page Wrapper */
+#home-page {
+    text-align: center;
+    padding-top: 80px; /* Adjust according to header height */
+}
+
+/* Hero Section */
+#home-hero {
+    background: linear-gradient(135deg, #00274d, #004080); /* Dark Blue */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#home-hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+#home-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#home-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Home Button */
+.home-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ff9800;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.home-btn:hover {
+    background: #e67e00;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(255, 152, 0, 0.5);
+}
+
+/* Features Section */
+#home-features {
+    background: #fff;
+    padding: 80px 20px;
+}
+
+#home-features h2 {
+    font-size: 2.5rem;
+    color: #00274d;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#home-features-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.home-feature-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.home-feature-box:hover {
+    transform: translateY(-5px);
+    background: #e3e9ff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.home-feature-box img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+}
+
+.home-feature-box h3 {
+    font-size: 1.6rem;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.home-feature-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Call to Action Section */
+#home-cta {
+    background: linear-gradient(to right, #ff9800, #e67e00);
+    color: white;
+    padding: 60px 20px;
+}
+
+#home-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#home-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#home-cta .home-btn {
+    background: #00274d;
+}
+
+#home-cta .home-btn:hover {
+    background: #001a33;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #home-hero h1 {
+        font-size: 2.5rem;
+    }
+    .home-feature-box {
+        width: 90%;
+    }
+}
