@@ -23,4 +23,18 @@ class LoginRequest(BaseModel):
         orm_mode = True
         arbitrary_types_allowed = True
 
+# Appointment Data Model
+class AppointmentRequest(BaseModel):
+    name: str
+    email: str
+    mobile: str
+    date: str
+    time: str
+    message: str
+    appointment_id: str
+
+    class Config:
+        orm_mode = True
+        arbitrary_types_allowed = True
+    
 

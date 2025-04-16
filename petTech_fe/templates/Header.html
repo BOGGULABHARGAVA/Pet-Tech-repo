@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Tech Pioneers - Animal Health Clinic</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/open_source/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/open_source/dataTables.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/open_source/jquery-ui.css') }}" rel="stylesheet">
+    
+    <!-- External Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/open_source/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/open_source/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/open_source/dataTables.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/open_source/plotly-2.32.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/open_source/jquery-ui.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/open_source/jspdf.umd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/open_source/jspdf.plugin.autotable.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+    <!-- Site Header Section -->
+    <header class="site-header bg-primary text-white py-4">
+        <div class="container text-center">
+            <!-- Logo and Clinic Info -->
+            <img src="{{ url_for('static', filename='images/petTech_logo.png') }}" alt="Pet Tech Pioneers Logo" class="logo mb-3" style="height: 80px;">
+            <h1 class="display-4">Pet Tech Pioneers</h1>
+            <p class="lead">Providing Quality Veterinary Services for Your Beloved Pets</p>
+            <p class="tagline">Expert Diagnosis and Treatment for Skin Diseases in Dogs</p>
+        </div>
+    </header>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="{{ url_for('static', filename='images/petTech_logo.png') }}" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('homePage') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('loginPage') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('aboutPage') }}">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('verification') }}">Verification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('suggestions') }}">Suggestions</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Block -->
+    <div class="container my-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Pet Tech Pioneers | All Rights Reserved</p>
+        <p><a href="mailto:bhargava@pettechpioneers.com" class="text-white">info@pettechpioneers.com</a></p>
+    </footer>
+
+</body>
+
+</html>

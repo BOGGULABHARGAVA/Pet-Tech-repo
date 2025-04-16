@@ -1,0 +1,11 @@
+{% extends 'Header.html' %}
+
+{% block content %}
+    <div class="suggestions-container">
+        <h2>Disease Suggestions</h2>
+        <div id="disease-info">
+             Disease and medication suggestions will be dynamically inserted here 
+        </div>
+        <a href="{{ url_for('contact') }}" class="btn">Contact Us for More Details</a>
+    </div>
+{% endblock %}

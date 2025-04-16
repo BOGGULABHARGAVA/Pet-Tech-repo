@@ -1,0 +1,60 @@
+{% extends 'Header.html' %}
+
+{% block content %}
+<div class="maincomponent">
+</div>
+
+    <!-- Home Page Wrapper -->
+    <div id="home-page">
+
+        <!-- Hero Section -->
+        <section id="home-hero">
+            <div id="home-hero-content">
+                <h1>Welcome to PetTech Pioneers</h1>
+                <p>Revolutionizing pet healthcare with technology. Get instant diagnoses, schedule checkups, and ensure the best care for your pets.</p>
+                <a href="#home-features" id="home-btn">Explore Features</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="home-features">
+            <h2>Our Key Features</h2>
+            <div id="home-features-container">
+                <div class="home-feature-box">
+                    <img src="images/ai-diagnosis.jpg" alt="AI Diagnosis">
+                    <h3>AI Diagnosis</h3>
+                    <p>Upload an image and get instant disease detection for your pet.</p>
+                </div>
+                <div class="home-feature-box">
+                    <img src="images/appointment.jpg" alt="Appointment Scheduling">
+                    <h3>Easy Appointments</h3>
+                    <p>Schedule vet visits with just a few clicks.</p>
+                </div>
+                <div class="home-feature-box">
+                    <img src="images/health.jpg" alt="Health Monitoring">
+                    <h3>Health Tracking</h3>
+                    <p>Keep track of your pet's health records and history.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="home-cta">
+            <h2>Join the Future of Pet Healthcare</h2>
+            <p>Sign up today and ensure the best care for your furry friend.</p>
+            <a href="loginPage.html" id="home-btn">Get Started</a>
+        </section>
+
+    </div>
+
+
+<script>
+    $(document).ready(function () {
+        register_login_events();
+        
+    });
+    <script> window.chtlConfig = { chatbotId: "8623277843" } </script>
+    <script async data-id="8623277843" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+
+</script>
+{% endblock %}

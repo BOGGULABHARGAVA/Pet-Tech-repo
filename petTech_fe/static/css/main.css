@@ -1,0 +1,470 @@
+/* General Reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+    .site-header {
+        background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient from purple to blue */
+        color: white;
+        padding: 50px 0;
+    }
+
+    .site-header .logo {
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .site-header h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .site-header p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .site-header .tagline {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+
+body, h1, h2, label, p {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    float: left;
+
+}
+
+.maincomponent {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul#tabs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+ul#tabs li {
+    margin: 0 5px;
+}
+
+ul#tabs li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+ul#tabs li a.inactive {
+    background-color: #f9f9f9;
+    color: #4CAF50;
+    border: 1px solid #ddd;
+}
+
+.inputrow {
+    margin: 15px 0;
+}
+
+.inputfield {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #007bff;
+    color: white !important;
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #007bff;
+    color: white !important;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:focus {
+    outline: none;
+}
+
+.navbar-toggler {
+    border-color: #007bff;
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff;
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(360deg);
+}
+.maincomponent {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#tabs li {
+    margin: 0 15px;
+}
+
+#tabs a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#tabs a:hover {
+    background-color: #eee;
+}
+
+.active-tab {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.inactive-tab {
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-col {
+    width: 45%;
+}
+
+.form-label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #4cae4c;
+}
+
+
+/* Global Styling */
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+}
+
+/* Header Styling */
+.card-header {
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    font-size: 18px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Input and Textarea Styling */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder Styling */
+::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+    }
+}
+/* General Reset */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6fb;
+    color: #333;
+}
+
+/* Home Page Wrapper */
+#home-page {
+    text-align: center;
+    padding-top: 80px; /* Adjust according to header height */
+}
+
+/* Hero Section */
+#home-hero {
+    background: linear-gradient(135deg, #00274d, #004080); /* Dark Blue */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#home-hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+#home-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#home-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Home Button */
+.home-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #ff9800;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.home-btn:hover {
+    background: #e67e00;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(255, 152, 0, 0.5);
+}
+
+/* Features Section */
+#home-features {
+    background: #fff;
+    padding: 80px 20px;
+}
+
+#home-features h2 {
+    font-size: 2.5rem;
+    color: #00274d;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#home-features-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.home-feature-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.home-feature-box:hover {
+    transform: translateY(-5px);
+    background: #e3e9ff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.home-feature-box img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+}
+
+.home-feature-box h3 {
+    font-size: 1.6rem;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.home-feature-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Call to Action Section */
+#home-cta {
+    background: linear-gradient(to right, #ff9800, #e67e00);
+    color: white;
+    padding: 60px 20px;
+}
+
+#home-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#home-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#home-cta .home-btn {
+    background: #00274d;
+}
+
+#home-cta .home-btn:hover {
+    background: #001a33;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #home-hero h1 {
+        font-size: 2.5rem;
+    }
+    .home-feature-box {
+        width: 90%;
+    }
+}
